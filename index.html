@@ -1,0 +1,782 @@
+<html>
+    <head>
+        <title>Game Over</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Bebas+Neue&family=Pixelify+Sans&family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-gradient">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="gameover_logo" width="100">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fab fa-windows"></i> &nbsp; PC
+                    </a>
+                    <ul class="dropdown-menu mt-3" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">
+                        <img src="images/steam.png" alt="" width="30" height="30" class="d-inline-block align-text-center rounded-circle mx-1 my-1">
+                        Steam
+                      </a></li>
+                      <li><a class="dropdown-item" href="#">
+                        <img src="images/ubisoft.png" alt="" width="30" height="30" class="d-inline-block align-text-center rounded-circle mx-1 my-1">
+                        Ubisoft
+                      </a></li>
+                      <li><a class="dropdown-item" href="#">
+                        <img src="images/ea.png" alt="" width="30" height="30" class="d-inline-block align-text-center rounded-circle mx-1 my-1">
+                        EA Sports
+                      </a></li>
+                      <li><a class="dropdown-item" href="#">
+                        <img src="images/rockstar.png" alt="" width="30" height="30" class="d-inline-block align-text-center rounded-circle mx-1 my-1">
+                        Rockstar
+                      </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fab fa-playstation"></i> &nbsp; Playstation
+                    </a>
+                    <ul class="dropdown-menu mt-3" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">
+                            <img src="images/ps4.jpg" alt="" width="30" height="30" class="d-inline-block align-text-center rounded-circle mx-1 my-1">
+                            PS4
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <img src="images/ps5.jpg" alt="" width="30" height="30" class="d-inline-block align-text-center rounded-circle mx-1 my-1">
+                            PS5
+                          </a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">
+                        <img src="images/psstore.png" alt="" width="30" height="30" class="d-inline-block align-text-center rounded-circle mx-1 my-1">
+                            Playstation Store
+                      </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fab fa-xbox"></i> &nbsp; Xbox
+                    </a>
+                    <ul class="dropdown-menu mt-3" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">
+                            <img src="images/xbox1.png" alt="" width="30" height="30" class="d-inline-block align-text-center rounded-circle mx-1 my-1">
+                            Xbox ONE
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <img src="images/xboxseries.png" alt="" width="30" height="30" class="d-inline-block align-text-center rounded-circle mx-1 my-1">
+                            Xbox Series
+                          </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">Pre-Order</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-dark text-white border-secondary inp" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn" type="button" id="button-addon2">
+                        <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+
+                  <button type="button" class="btn mx-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <i class="far fa-user"></i>
+                  </button>
+
+                </form>
+              </div>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header bg-dark bg-gradient text-white border-secondary">
+                <h5 class="modal-title" id="staticBackdropLabel">Log in</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body bg-dark bg-gradient text-white">
+                  <form>
+                      <div class="mb-3 mx-3 mt-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control bg-dark text-white border-secondary" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3 mx-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control bg-dark text-white border-secondary" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-check form-switch mx-3 my-4">
+                          <input class="form-check-input border-secondary" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">Remember Me</label>
+                      </div>                                  
+                      <hr>
+                      <div class="d-flex justify-content-between mt-2 mb-4">
+                          <button type="submit" class="btn mx-3">Login</button>
+                          <button type="button" class="btn mx-3" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/mirage.gif" class="w-100 d-none d-sm-block" alt="...">
+                <img src="images/mirage_poster.jpeg" class="w-100 d-sm-none mob-poster" alt="...">
+                <div class="carousel-caption">
+                  <h5 class="d-none d-sm-block">
+                    <img src="images/mirage_logo - Copy.png" alt="" width="300">
+                  </h5>
+                  <button class="btn my-2">Buy Now</button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="images/fc24.gif" class="d-block w-100 d-none d-sm-block" alt="...">
+                <img src="images/game3.png" class="d-block w-100 d-sm-none mob-poster" alt="...">
+                <div class="carousel-caption ">
+                  <h5 class="d-none d-sm-block">
+                    <img src="images/fc24_logo.png" alt="" width="300">
+                  </h5>
+                  <button class="btn my-2">Buy Now</button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="images/spiderman2.gif" class="d-block w-100 d-none d-sm-block" alt="...">
+                <img src="images/game22.jpg" class="d-block w-100 d-sm-none mob-poster" alt="...">
+                <div class="carousel-caption ">
+                  <h5 class="d-none d-sm-block">
+                    <img src="images/spiderman2_logo.png" alt="" width="300">
+                  </h5>
+                  <button class="btn my-2">Buy Now</button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="images/hogwarts.gif" class="d-block w-100 d-none d-sm-block" alt="...">
+                <img src="images/game4.jpg" class="d-block w-100 d-sm-none mob-poster" alt="...">
+                <div class="carousel-caption ">
+                  <h5 class="d-none d-sm-block">
+                    <img src="images/hogwarts_logo.png" alt="" width="300">
+                  </h5>
+                  <button class="btn my-2">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+
+
+        <section class="intro bg-dark text-white pb-5 rounded-bottom shadow-lg">
+            <h5 class="intro-head mx-4 mx-sm-5 pt-5">
+              GameOver
+            </h5>
+            <p class="mx-4 mx-sm-5 mt-3 fs-5">
+              GameOver offers you a brand new, ultra-convenient way in trading new and pre-owned games, covering all current consoles (PS5, PS4, PS3, Xbox One, Xbox 360)..
+            </p>
+            <button class="btn mx-4 mx-sm-5 mt-3">
+              Learn More
+            </button>
+        </section>
+
+        <div class="shadow-lg py-5 my-4 rounded sec-title">
+          <p class="fs-2">
+            <i class="fas fa-gamepad"></i> &nbsp; Popular Games &nbsp; <i class="fas fa-gamepad"></i>
+          </p>
+        </div>
+
+        <div class="accordion shadow-lg" id="accordionExample">
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed bg-dark bg-gradient text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <img src="images/ac.png" alt="" width="30"  class="d-inline-block align-text-center rounded-circle mx-1 my-1">
+                  &nbsp; Assassin's Creed
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body assassins-creed p-0">
+                <div class="overlay-accordion p-5">
+                  <p class="accordion-paragraph pt-2">
+                    Assassin's Creed is a historical open-world video game series in the genre of science fiction, action adventure, and third-person stealth, consisting of thirteen main games. The game appeared on PlayStation 3, PlayStation 4, Xbox 360, Microsoft Windows, Mac OS X, Nintendo DS, PlayStation Portable, PlayStation Vita, HP WebOS, iOS, Android, Windows Phone 7, and Wii U.
+                  </p>
+                  <p class="accordion-paragraph pt-2">
+                    The base game in the series was developed by Ubisoft Montreal for single-player play and Ubisoft Annecy for multiplayer play, while the mobile version was developed by Gameloft and Griptonite Studios, with additional development by Ubisoft Montreal. The game was well received by users and critics, and the series is based on the novel Alamut by Vladimir Bartol. All games in the series are published by Ubisoft.
+                  </p>
+                  <div class="col-12 col-sm-6 border border-secondary rounded mx-auto mt-5">
+                      <figure class="text-center pt-2 px-3 mt-3">
+                        <blockquote class="blockquote">
+                          <p class="">“Nothing is true, Everything is permitted.”</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          Ezio Auditore Da Firenze
+                        </figcaption>
+                      </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed bg-dark bg-gradient text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <img src="images/witcher.png" alt="" width="30"  class="d-inline-block align-text-center rounded-circle mx-1 my-1">
+                  &nbsp; The Witcher
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body witcher p-0">
+                <div class="overlay-accordion p-5">
+                  <p class="accordion-paragraph pt-2">
+                    The Witcher is a fantasy action role-playing game series developed by CD Projekt Red and published by CD Projekt. It is based on the book series of the same name by Polish writer Andrzej Sapkowski, acting as non-canonical sequels to the story of the books.</p>
+                  <p class="accordion-paragraph pt-2">
+                    The main series began in 2007 with the release of The Witcher, and concluded with 2015's The Witcher 3: Wild Hunt. As of 2022, the series has three main standalone games, two expansion packs and seven spin-off games. The series is critically acclaimed and commercially successful, selling over 75 million units by March 2023.</p>
+                  <div class="col-12 col-sm-6 border border-secondary rounded mx-auto mt-5">
+                      <figure class="text-center pt-2 px-3 mt-3">
+                        <blockquote class="blockquote">
+                          <p>"This Is My Story Not Yours. You Must Let Me Finish Telling It."</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          Geralt Of Rivia
+                        </figcaption>
+                      </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed bg-dark bg-gradient text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <img src="images/pes.png" alt="" width="30"  class="d-inline-block align-text-center rounded-circle mx-1 my-1">
+                  &nbsp; Pro Evolution Soccer
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body pes p-0">
+                <div class="overlay-accordion p-5">
+                  <p class="accordion-paragraph pt-2">
+                    eFootball, formerly known as Pro Evolution Soccer, abbreviated PES globally and Winning Eleven in Japan, is a football simulation video game series. Foot has been developed and published by Konami since 1995. It consists of eighteen main parts and several spin-off titles released on many different platforms. The series has been a consistent critical and commercial success.</p>
+                  <p class="accordion-paragraph pt-2">
+                    In association football circles, eFootball has a long-standing rivalry with EA Sports' FIFA series. eFootball is the second largest football video game series after FIFA, and the rivalry between the two series is considered the "biggest rivalry" in the history of sports video games.</p>
+                  <div class="col-12 col-sm-6 border border-secondary rounded mx-auto mt-5">
+                      <figure class="text-center pt-2 px-3 mt-3">
+                        <blockquote class="blockquote">
+                          <p>“Talent without working hard is nothing.”</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          Cristiano Ronaldo
+                        </figcaption>
+                      </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shadow-lg py-5 my-4 rounded sec-title">
+          <p class="fs-2">
+            <i class="fas fa-gamepad"></i> &nbsp; Selling Your Devices &nbsp; <i class="fas fa-gamepad"></i>
+          </p>
+        </div>
+
+        <section class="sell mb-4 bg-dark bg-gradient row justify-content-evenly mx-auto">
+          <div class="col-11 col-md-4 m-5">
+            <select class="form-select bg-dark text-white" aria-label="Default select example">
+              <option hidden>Choose Your Platform</option>
+              <option value="1">PC</option>
+              <option value="2">PS4</option>
+              <option value="3">PS5</option>
+              <option value="4">Xbox1</option>
+            </select>
+            <div class="my-3">
+              <textarea class="form-control bg-dark text-white" placeholder="Device Specifications:" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+            <label for="inputGroupFile04" class="form-label text-white">Upload a photo of your device</label>
+            <div class="input-group">
+              <input type="file" class="form-control bg-dark text-white" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+              <button class="btn" type="button" id="inputGroupFileAddon04" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Send the information of your device">Send</button>
+            </div>
+          </div>
+          <div class="col-11 col-md-5 text-white m-5 pt-4 info">
+            You will receive on your e-mail: 
+            <ul>
+              <li><p>Offer confirmation, good to the end of the business day</p></li>
+              <li><p>Address and map to your nearest store</p></li>
+              <li><p>Instruction on preparing your device for trade-in</p></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="wall1 d-none d-sm-block">
+          <div class="overlay"></div>
+        </section>
+        <section class="wall1-mob d-sm-none">
+          <div class="overlay"></div>
+        </section>
+
+        <div class="shadow-lg py-5 my-4 rounded sec-title">
+          <p class="fs-2">
+            <i class="fas fa-gamepad"></i> &nbsp; Best Seller Games &nbsp; <i class="fas fa-gamepad"></i>
+          </p>
+        </div>
+
+        <section class="cards container-fluid text-white bg-dark pb-5 bg-gradient">
+          <div class="row justify-content-around">
+          <div class="col-12 col-sm-7 col-md-5 col-lg-3 mt-5 card-parent">
+            <div class="card bg-dark border border-secondary shadow-lg bg-gradient">
+              <img src="images/mirage_poster.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title py-1">Assassin's Creed Mirage</h5>
+                  <a href="#" class="btn">Buy Now</a>
+                </div>
+                <p class="card-text">Available for: PS5, PS4, Xbox1, PC</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-7 col-md-5 col-lg-3 mt-5">
+            <div class="card bg-dark border border-secondary shadow-lg bg-gradient">
+              <img src="images/game2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title py-1">Spider-Man 2</h5>
+                  <a href="#" class="btn">Buy Now</a>
+                </div>
+                <p class="card-text">Available for: PS5, Xbox1</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-7 col-md-5 col-lg-3 mt-5">
+            <div class="card bg-dark border border-secondary shadow-lg bg-gradient">
+              <img src="images/game3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title py-1">FC24</h5>
+                  <a href="#" class="btn">Buy Now</a>
+                </div>
+                <p class="card-text">Available for: PS5, Xbox1, PC</p>
+              </div>
+            </div>
+          </div>  
+          </div>
+
+          <div class="row justify-content-around">
+            <div class="col-12 col-sm-7 col-md-5 col-lg-3 mt-5">
+              <div class="card bg-dark border border-secondary shadow-lg bg-gradient">
+                <img src="images/game4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title py-1">Hogwarts Legacy</h5>
+                    <a href="#" class="btn">Buy Now</a>
+                  </div>
+                  <p class="card-text">Available for: PS5, Xbox1, PC</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-5 col-lg-3 mt-5">
+              <div class="card bg-dark border border-secondary shadow-lg bg-gradient">
+                <img src="images/game5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title py-1">NBA 2K22</h5>
+                    <a href="#" class="btn">Buy Now</a>
+                  </div>
+                  <p class="card-text">Available for: PS5, PS4, Xbox1, PC</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-5 col-lg-3 mt-5">
+              <div class="card bg-dark border border-secondary shadow-lg bg-gradient">
+                <img src="images/game6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title py-1">Hitman III</h5>
+                    <a href="#" class="btn">Buy Now</a>
+                  </div>
+                  <p class="card-text">Available for: PS5, Xbox1, PC</p>
+                </div>
+              </div>
+            </div>  
+            </div>
+
+            <div class="row justify-content-around">
+              <div class="col-12 col-sm-7 col-md-5 col-lg-3 mt-5">
+                <div class="card bg-dark border border-secondary shadow-lg bg-gradient">
+                  <img src="images/game7.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title py-1">Tekken 8</h5>
+                      <a href="#" class="btn">Buy Now</a>
+                    </div>
+                    <p class="card-text">Available for: PS5, Xbox1, PC</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-7 col-md-5 col-lg-3 mt-5">
+                <div class="card bg-dark border border-secondary shadow-lg bg-gradient">
+                  <img src="images/game8.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title py-1">Far Cry 6</h5>
+                      <a href="#" class="btn">Buy Now</a>
+                    </div>
+                    <p class="card-text">Available for: PS5, PS4, Xbox1, PC</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+        </section>
+
+        <section class="wall2 d-none d-sm-block">
+          <div class="overlay"></div>
+        </section>
+        <section class="wall2-mob d-sm-none">
+          <div class="overlay"></div>
+        </section>
+
+        <div class="shadow-lg py-5 my-4 rounded sec-title">
+          <p class="fs-2">
+            <i class="fas fa-vr-cardboard"></i> &nbsp; Meta Games &nbsp; <i class="fas fa-vr-cardboard"></i>
+          </p>
+        </div>
+
+        <section class="meta container-fluid py-5">
+          <div class="row justify-content-evenly text-white">
+            <div class="col-9 col-md-5 col-lg-3 meta-game p-0">
+              <div class="meta-overlay p-4 pb-2">
+                <div class="meta-title">
+                  <h3><a href="#" class="text-decoration-none">Assassin's Creed Nexus</a></h3>
+                  <span>
+                    Available on <img src="images/Meta_Quest_logo.svg.png" alt="" width="120"  class="d-inline-block align-text-center  mx-1 my-1">
+                  </span>
+                </div>
+                <div class="pt-0 pt-md-5 mt-5">
+                  <div class="meta-pic mt-5"></div>
+                  <p class="mt-3">Ubisoft Originals
+                  <br>
+                  <small>
+                    <i class="fas fa-clock"></i>&nbsp; January 15th 2024
+                  </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 col-md-5 col-lg-3 meta-game p-0 mt-4 mt-md-0" style="background-image: url(images/meta2.png);">
+              <div class="meta-overlay p-4 pb-2">
+                <div class="meta-title">
+                  <h3><a href="#" class="text-decoration-none">Halo Infinite</a></h3>
+                  <span>
+                    Available on <img src="images/Meta_Quest_logo.svg.png" alt="" width="120"  class="d-inline-block align-text-center  mx-1 my-1">
+                  </span>
+                </div>
+                <div class="pt-0 pt-md-5 mt-5">
+                  <div class="meta-pic mt-5" style="background-image: url(images/meta2.png);"></div>
+                  <p class="mt-3">343 Industries Originals
+                  <br>
+                  <small>
+                    <i class="fas fa-clock"></i>&nbsp; March 5th 2024
+                  </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 col-md-5 col-lg-3 meta-game p-0 mt-4 mt-lg-0" style="background-image: url(images/meta3.png);">
+              <div class="meta-overlay p-4 pb-2">
+                <div class="meta-title">
+                  <h3><a href="#" class="text-decoration-none">Call Of Duty III</a></h3>
+                  <span>
+                    Available on <img src="images/Meta_Quest_logo.svg.png" alt="" width="120"  class="d-inline-block align-text-center  mx-1 my-1">
+                  </span>
+                </div>
+                <div class="pt-0 pt-md-5 mt-5">
+                  <div class="meta-pic mt-5" style="background-image: url(images/meta3.png);"></div>
+                  <p class="mt-3">Activision Originals
+                  <br>
+                  <small>
+                    <i class="fas fa-clock"></i>&nbsp; May 10th 2024
+                  </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="shadow-lg py-5 my-4 rounded sec-title">
+          <p class="fs-2">
+            <i class="fas fa-gamepad"></i> &nbsp; Gameplay Trailers &nbsp; <i class="fas fa-gamepad"></i>
+          </p>
+        </div>
+
+        <section class="trailers container">
+          <div class="card border-secondary mb-5">
+            <div class="row g-0 bg-dark text-white">
+              <div class="img-box-wider d-md-none">
+                <a href="#">
+                  <img src="images/trailer1-mob.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-7 col-lg-7 col-xl-9">
+                <div class="card-body p-4 p-sm-5">
+                  <h5 class="card-title pb-2">
+                    <a href="#" class="text-decoration-none">Assassin's Creed Mirage</a>
+                  </h5>
+                  <p class="date">
+                    <i class="fas fa-calendar-alt"></i>&nbsp; October 5th 2023
+                  </p>
+                  <div class="line"></div>
+                  <p class="card-text py-3 mt-2 pe-4">
+                    Experience the story of Basim, a cunning street thief seeking answers and justice as he navigates the bustling streets of ninth-century Baghdad.<span class="d-lg-none">..</span>
+                    <span class="d-none d-lg-inline">Through a mysterious, ancient organization known as the Hidden Ones, he will become a deadly Master Assassin and change his fate in ways he never could have imagined.</span>
+                  </p>
+                  <div class="trailer-links mt-5 pt-4">
+                    <span class="rounded px-2 py-1"><i class="fas fa-map-marker-alt"></i>&nbsp; Ubisoft</span>
+                    <span class="rounded px-2 py-1 mx-1"><i class="fas fa-clock"></i>&nbsp; 1:59</span>
+                    <span class="rounded px-2 py-1"><a href="#" class="text-decoration-none"> <i class="fas fa-play"></i>&nbsp; Watch Trailer</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-5 col-xl-3 d-none d-md-block img-box">
+                <a href="#">
+                  <img src="images/mirage_poster.jpeg" class="img-fluid float-end rounded-end" alt="...">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-secondary mb-5">
+            <div class="row g-0 bg-dark text-white">
+              <div class="img-box-wider d-md-none">
+                <a href="#">
+                  <img src="images/trailer2-mob.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5 col-lg-5 col-xl-3 d-none d-md-block img-box2">
+                <a href="#">
+                  <img src="images/trailer2.jpg" class="img-fluid float-start rounded-start" alt="...">
+                </a>
+              </div>
+              <div class="col-md-7 col-lg-7 col-xl-9">
+                <div class="card-body p-4 p-sm-5">
+                  <h5 class="card-title pb-2">
+                    <a href="#" class="text-decoration-none">Spider-Man 2</a>
+                  </h5>
+                  <p class="date">
+                    <i class="fas fa-calendar-alt"></i>&nbsp; October 20th 2023
+                  </p>
+                  <div class="line"></div>
+                  <p class="card-text py-3 mt-2 pe-4">
+                    Spider-Men Peter Parker and Miles Morales face the ultimate test of strength inside and outside the mask as they fight to save the city, each other and the ones they love, from the monstrous Venom and the dangerous new symbiote threat.<span class="d-lg-none">..</span>
+                    <span class="d-none d-lg-inline">
+                      Explore an expansive Marvel’s New York with faster web-swinging and the all-new Web Wings, quickly switching between Peter and Miles to experience different stories, epic new abilities and high-tech gear.
+                    </span>
+                  </p>
+                  <div class="trailer-links mt-5 pt-4">
+                    <span class="rounded px-2 py-1"><i class="fas fa-map-marker-alt"></i>&nbsp; Marvel</span>
+                    <span class="rounded px-2 py-1 mx-1"><i class="fas fa-clock"></i>&nbsp; 1:13</span>
+                    <span class="rounded px-2 py-1"><a href="#" class="text-decoration-none"> <i class="fas fa-play"></i>&nbsp; Watch Trailer</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-secondary mb-5">
+            <div class="row g-0 bg-dark text-white">
+              <div class="img-box-wider d-md-none">
+                <a href="#">
+                  <img src="images/trailer3-mob.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-7 col-lg-7 col-xl-9">
+                <div class="card-body p-4 p-sm-5">
+                  <h5 class="card-title pb-2">
+                    <a href="#" class="text-decoration-none">FC 24</a>
+                  </h5>
+                  <p class="date">
+                    <i class="fas fa-calendar-alt"></i>&nbsp; September 29th 2023
+                  </p>
+                  <div class="line"></div>
+                  <p class="card-text py-3 mt-2 pe-4">
+                    EA Sports FC 24 for PC is a football simulation game, the successor to the FIFA games now that the partnership with that authorising body has come to an end.<span class="d-lg-none">..</span>
+                    <span class="d-none d-lg-inline">
+                      It is the first in the series, but spiritually the 31st game in the series. Despite the renaming, the company said in its statement that the rebranded franchise would retain its licenses of more than 19,000 players, over 700 teams, over 100 stadiums, and over 30 leagues – all based on real people and teams.
+                    </span>
+                  </p>
+                  <div class="trailer-links mt-5 pt-4">
+                    <span class="rounded px-2 py-1"><i class="fas fa-map-marker-alt"></i>&nbsp; EA Sports</span>
+                    <span class="rounded px-2 py-1 mx-1"><i class="fas fa-clock"></i>&nbsp; 1:50</span>
+                    <span class="rounded px-2 py-1"><a href="#" class="text-decoration-none"> <i class="fas fa-play"></i>&nbsp; Watch Trailer</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-5 col-xl-3 d-none d-md-block img-box">
+                <a href="#">
+                  <img src="images/trailer3.jpg" class="img-fluid float-end rounded-end" alt="...">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-secondary mb-5">
+            <div class="row g-0 bg-dark text-white">
+              <div class="img-box-wider d-md-none">
+                <a href="#">
+                  <img src="images/trailer4-mob.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5 col-lg-5 col-xl-3 d-none d-md-block img-box2">
+                <a href="#">
+                  <img src="images/trailer4.jpg" class="img-fluid float-start rounded-start" alt="...">
+                </a>
+              </div>
+              <div class="col-md-7 col-lg-7 col-xl-9">
+                <div class="card-body p-4 p-sm-5">
+                  <h5 class="card-title pb-2">
+                    <a href="#" class="text-decoration-none">Hogwarts Legacy</a>
+                  </h5>
+                  <p class="date">
+                    <i class="fas fa-calendar-alt"></i>&nbsp; December 10th 2023
+                  </p>
+                  <div class="line"></div>
+                  <p class="card-text py-3 mt-2 pe-4">
+                    Hogwarts Legacy is an open-world action RPG set in the world first introduced in the Harry Potter books. Embark on a journey through familiar and new locations as you explore and discover magical beasts<span class="d-lg-none">...</span>
+                    <span class="d-none d-lg-inline">
+                      , customize your character and craft potions, master spell casting, upgrade talents and become the wizard you want to be.
+                    </span>
+                  </p>
+                  <div class="trailer-links mt-5 pt-4">
+                    <span class="rounded px-2 py-1"><i class="fas fa-map-marker-alt"></i>&nbsp; WarnerBros</span>
+                    <span class="rounded px-2 py-1 mx-1"><i class="fas fa-clock"></i>&nbsp; 2:29</span>
+                    <span class="rounded px-2 py-1"><a href="#" class="text-decoration-none"> <i class="fas fa-play"></i>&nbsp; Watch Trailer</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <div class="shadow-lg py-5 my-4 rounded sec-title">
+          <p class="fs-2">
+            <i class="fas fa-gamepad"></i> &nbsp; Join Us &nbsp; <i class="fas fa-gamepad"></i>
+          </p>
+        </div>
+
+        <section class="contacts bg-dark bg-gradient text-white">
+          <div class="row container mx-auto py-5 gx-5">
+            <div class="col-12 col-sm-6 col-md-3 mt-3">
+              <div class="text-center">
+                <div class="card-body">
+                  <p class="card-text"><i class="fab fa-facebook"></i></p>
+                  <a href="#" class="text-decoration-none">Facebook</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mt-3">
+              <div class="text-center">
+                <div class="card-body">
+                  <p class="card-text"><i class="fab fa-instagram"></i></p>
+                  <a href="#" class="text-decoration-none">Instagram</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mt-3">
+              <div class="text-center">
+                <div class="card-body">
+                  <p class="card-text"><i class="fab fa-whatsapp"></i></p>
+                  <a href="#" class="text-decoration-none">Whatsapp</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mt-3">
+              <div class="text-center">
+                <div class="card-body">
+                  <p class="card-text"><i class="fab fa-amazon"></i></p>
+                  <a href="#" class="text-decoration-none">Amazon</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="py-5">
+          <div class="container-fluid text-center">
+            <div class="row justify-content-evenly">
+              <div class="col-12 col-md-2 text-white">
+                <h4 class="border-top border-bottom border-dark border-2 py-4">Contact Us</h4>
+                <p class="mt-4"><i class="fas fa-map-marker-alt"></i> &nbsp; Egypt</p>
+                <p><i class="fas fa-phone-alt"></i> &nbsp; 000-000-000</p>
+                <p><i class="fas fa-envelope"></i> &nbsp; support@gameover.in</p>
+              </div>
+              <div class="col-12 col-md-2">
+                <h4 class="border-top border-bottom border-dark border-2 py-4 text-white">Information</h4>
+                <p class="mt-4"><a href="#" class="text-decoration-none">Contact us</a></p>
+                <p><a href="#" class="text-decoration-none">Terms of Use</a></p>
+                <p><a href="#" class="text-decoration-none">Privacy policy</a></p>
+              </div>
+              <div class="col-12 col-md-2">
+                <h4 class="border-top border-bottom border-dark border-2 py-4 text-white">Find Our App</h4>
+                <p class="mt-4"><a href="#" class="text-decoration-none"><i class="fab fa-apple"></i> &nbsp; App Store</a></p>
+                <p><a href="#" class="text-decoration-none"><i class="fab fa-google-play"></i> &nbsp; Google Play</a></p>
+                <p><a href="#" class="text-decoration-none"><i class="fab fa-microsoft"></i> &nbsp; Microsoft Store</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rights fs-6 text-center border-bottom border-top border-dark border-2 mt-4 py-3 text-white">
+            <img src="images/logo.png" alt="" width="60"  class="d-inline-block align-text-center mx-1 my-1">
+              Copyright &copy; 2023 GameOver - All rights reserved
+          </div>
+          
+        </footer>
+
+        <div class="icons-group">
+          <i class="fab fa-facebook my-3"></i>
+          <i class="fab fa-instagram my-3"></i>
+          <i class="fab fa-whatsapp my-3"></i>
+          <i class="fab fa-amazon my-3"></i>
+        </div>
+
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

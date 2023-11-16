@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: rgb(33,37,41);
+}
+
+.navbar{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.btn{
+    border-color: #e12301;
+    color: #e12301;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    background-color: #e12301;
+    color: white;
+}
+
+.inp{
+    border-radius: 8px;
+}
+
+.btn:focus , .inp:focus , .accordion-button:focus , .btn-close:focus , .form-select:focus , .form-control:focus{
+    box-shadow: none;
+}
+
+#flexSwitchCheckChecked:focus{
+    box-shadow: none;
+}
+
+#flexSwitchCheckChecked:checked{
+    background-color: #e12301;
+}
+
+.dropdown-menu{
+    background-color: rgba(33,37,41,0.7);
+}
+
+.dropdown-menu li a{
+    color: white;
+}
+
+.mob-poster{
+    height: 600px;
+}
+
+.intro-head{
+    font-size: 30px;
+    text-shadow: 0px 0px 15px grey;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.intro .btn{
+    font-size: 25px;
+}
+
+.sec-title{
+    background-color: #e12301;
+    color: white;
+    text-align: center;
+}
+
+.accordion-button{
+    font-size: 25px;
+}
+
+.games-posters img{
+    transition: .5s;
+}
+
+.games-posters img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.overlay-accordion{
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(bottom,rgba(33,37,41,0.7), rgba(33,37,41,1));
+}
+
+.assassins-creed ,.witcher, .pes{
+    background-image: url(../images/accordion1.jpg);
+    background-size: cover;
+}
+
+.witcher{
+    background-image: url(../images/accordion2.jpg);
+}
+
+.pes{
+    background-image: url(../images/accordion3.jpg);
+}
+
+.accordion-paragraph{
+    font-size: 20px;
+}
+
+.info{
+    font-size: 20px;
+}
+
+.wall1 , .wall2{
+    background-image: url(../images/wall1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.wall2{
+    background-image: url(../images/wall2.jpg);
+}
+
+.wall1-mob , .wall2-mob{
+    background-image: url(../images/mobile-wall1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.wall2-mob{
+    background-image: url(../images/mobile-wall2.jpg);
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(bottom,rgba(33,37,41,0.5), rgba(33,37,41,1));
+}
+
+.cards img{
+    width: 100%;
+    height: 450px;
+}
+
+.cards .card::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    box-shadow:  0 0 100px 100px rgba(255, 255, 255, 0.1) inset;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.cards .card:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.cards .card::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    right: 0;
+    box-shadow:  0 0 100px 100px rgba(255, 255, 255, 0.2) inset;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.cards .card:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.cards .card-body a{
+    z-index: 1;
+}
+
+.meta-game{
+    background-image: url(../images/meta1.png);
+    background-size: cover;
+    border-radius: 20px;
+    transition: 0.25s;
+}
+
+.meta-overlay{
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(bottom,rgba(54,69,79, 0.7), rgba(54,69,79,1));
+    border-radius: 20px;
+}
+
+.meta-pic{
+    width: 110px;
+    height: 150px;
+    background-image: url(../images/meta1.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: white solid 2px;
+}
+
+.meta .meta-game:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.meta-title{
+    transition: 0.25s;
+}
+
+.meta .meta-game:hover .meta-title{
+    transform: translateY(50%);
+}
+
+.meta .meta-game:hover .meta-overlay{
+    background: -webkit-linear-gradient(bottom,rgba(13, 92, 189, 0.5),rgba(13,92,189,1));
+    background: -webkit-linear-gradient(bottom,rgba(21,33,42, 0.5),rgba(21,33,42,1));
+}
+
+.meta-title a{
+    color: white;
+}
+
+.meta-title a:hover{
+    opacity: 0.4;
+}
+
+.meta-overlay p{
+    font-size: 18px;
+}
+
+.trailers .card{
+    overflow: hidden;
+}
+
+.img-box , .img-box2{
+    overflow: hidden;
+    position: relative;
+}
+
+.img-box::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -55;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(33,37,41);
+    z-index: 1;
+    transform: skewX(4deg);
+}
+
+.img-box2::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -55;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(33,37,41);
+    z-index: 1;
+    transform: skewX(-4deg);
+}
+
+.img-box img , .img-box2 img , .img-box-wider img{
+    transition: .25s;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 992px){
+    .img-box::before , .img-box2::before{
+        display: none;
+    }
+
+    .trailers .card-body .card-text{
+        height: 100px;
+    }
+}
+
+.trailers .card:hover img{
+    transform: scale(1.1);
+}
+
+.line{
+    height: 3px;
+    width: 45px;
+    background-color: #ff5400;
+    border-radius: 30px;
+    transition: 0.25s;
+    transform-origin: left;
+}
+
+.trailers .card:hover .line{
+    transform: scaleX(2);
+}
+
+.trailers .card .card-body .card-title a{
+    color: white;
+    font-size: 30px;
+}
+
+.trailers .card .card-body .card-title a:hover{
+    opacity: 0.4;
+}
+
+.trailer-links span{
+    transition: .5s;
+    background-color: rgb(81, 81, 81);
+}
+
+.trailer-links span:hover{
+    background-color: rgba(81, 81, 81, 0.5);
+}
+
+.trailer-links a{
+    color: white;
+}
+
+.trailer-links a:hover{
+    color: #ff5400;
+}
+
+.contacts i{
+    transition: 1s;
+    font-size: 70px;
+    color: gray;
+}
+
+.contacts i:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.contacts a{
+    color: gray;
+}
+
+.contacts a:hover{
+    opacity: 0.5;
+}
+
+footer{
+    background-color: black;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: #e12301;
+}
+
+.icons-group{
+    position: fixed;
+    top: 35%;
+    right: 20;
+    color: #e12301;
+    font-size: 40px;
+    z-index: 100;
+}
+
+.icons-group i{
+    display: block;
+}
+
+.icons-group i:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media (max-width: 576px){
+    .overlay-accordion .accordion-paragraph{
+        font-size: 15px;
+    }
+
+    .assassins-creed{
+        background-image: url(../images/mobile-wall1.jpg);
+    }
+
+    .witcher{
+        background-image: url(../images/witcher-mobile.jpg);
+    }
+
+    .pes{
+        background-image: url(../images/pes-mobile.jpg);
+    }
+    
+    .cards .card .card-body .card-title{
+        font-size: 18px;
+    }
+
+    .trailers .card .card-body .card-title a{
+        font-size: 25px;
+    }
+
+    .trailers .card .card-body .card-text{
+        font-size: 13px;
+    }
+
+    .trailers .card .card-body .trailer-links{
+        font-size: 13px;
+    }
+}
